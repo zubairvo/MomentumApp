@@ -12,7 +12,6 @@ public class MenuActivity extends AppCompatActivity {
 
         private TextView UserWelcome;
         private String Username;
-        private Button HomeBtn;
         private Button AboutBtn;
         private Button DevBtn;
         private Button CalcBtn;
@@ -25,13 +24,14 @@ public class MenuActivity extends AppCompatActivity {
         if (extras != null) {
 
             Username = extras.getString( "UserWelcome");
+            TextView UserWelcome = (TextView) findViewById(R.id.userWelcome);
+            UserWelcome.setText("Welcome to the Momentum App," + Username);
         }
 
-        TextView UserWelcome = (TextView) findViewById(R.id.userWelcome);
-        UserWelcome.setText("Welcome to the Momentum App," + Username);
 
-        HomeBtn = (Button)findViewById(R.id.btnHome);
-        HomeBtn.setOnClickListener(new View.OnClickListener(){
+
+        Button homeBtn = (Button) findViewById(R.id.btnHome);
+        homeBtn.setOnClickListener(new View.OnClickListener(){
 
             public void onClick(View view){
                 homePage();
