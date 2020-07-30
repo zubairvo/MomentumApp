@@ -19,7 +19,7 @@ public class CalcActivity extends AppCompatActivity {
         setContentView(R.layout.activity_calc);
         mEditText1 = findViewById(R.id.edittext_number_1);
         mEditText2 = findViewById(R.id.edittext_number_2);
-        mTextViewResult = findViewById(R.id.textview_result);
+        mTextViewResult = findViewById(R.id.textView_result);
         mButtonAdd = findViewById(R.id.button_add);
         mButtonAdd.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,7 +33,7 @@ public class CalcActivity extends AppCompatActivity {
                 int num1 = Integer.parseInt(mEditText1.getText().toString());
                 int num2 = Integer.parseInt(mEditText2.getText().toString());
                 int sum = num1 * num2;
-                mTextViewResult.setText(String.valueOf(sum));
+                mTextViewResult.setText(String.valueOf(sum) + "kg-m/s");
             }
         });
     }

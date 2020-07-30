@@ -25,7 +25,7 @@ public class MenuActivity extends AppCompatActivity {
 
             Username = extras.getString( "UserWelcome");
             TextView UserWelcome = (TextView) findViewById(R.id.userWelcome);
-            UserWelcome.setText("Welcome to the Momentum App," + Username);
+            UserWelcome.setText( Username +"," + " " + "Welcome to the Momentum App" );
         }
 
 

@@ -1,39 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="@color/teal"
     tools:context=".CalcActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Momentum is calculated using the mass (M) of an object multiplied by the velocity (V) of the object the formula can be written as p = mv"
+        android:textColor="@color/white"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:paddingBottom="15dp"
+        android:gravity="center_horizontal" />
+
     <EditText
         android:id="@+id/edittext_number_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:background="@drawable/shapemail"
+        android:drawablePadding="10dp"
+        android:hint="Enter Mass of Object (Kg)"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textColorHighlight="@color/white"
         android:inputType="number" />
+    
     <EditText
         android:id="@+id/edittext_number_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        android:layout_below="@+id/edittext_number_1"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:background="@drawable/shapemail"
+        android:drawablePadding="10dp"
+        android:hint="Enter Velocity of Object (KM/h)"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textColorHighlight="@color/white"
         android:inputType="number"
+        
         android:layout_alignParentLeft="true" />
-    <TextView
-        android:id="@+id/textview_result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/edittext_number_2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:text="0"
-        android:textColor="@android:color/black"
-        android:textSize="50sp" />
     <Button
         android:id="@+id/button_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate Momentum"
+        android:textColor="@color/white"
+        android:shadowColor="@android:color/transparent"
+        android:padding="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/calculatebutton"
+         />
+    <TextView
+        android:id="@+id/calculatedMomentum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="add" />
-</RelativeLayout>
+        android:text="The momentum of the object is:"
+        android:textColor="@color/white"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:paddingBottom="15dp"
+        android:gravity="center_horizontal" />
+    
+    <TextView
+        android:id="@+id/textView_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="50sp" />
+    
+</LinearLayout>
