@@ -5,10 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
+//https://github.com/zubairvo/TravelList
 public class MainActivity extends AppCompatActivity {
 
     private EditText Name;
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         Name = (EditText)findViewById(R.id.loginName);
         Password = (EditText)findViewById(R.id.LoginPassword);
