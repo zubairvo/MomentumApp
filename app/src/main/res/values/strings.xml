@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">MomentumApp</string>
+
+    <string name="aboutme">I am a 26 Year old software developer from Cape Town, South Africa.
+    I am currently a final Year student at the Cape Peninsula University of Technology</string>
+
+    <string name="hobbies">Gaming, Chess, Sport, Reading</string>
+    <string name="skills">Java, Android Development, C#, HTML, CSS, AngularJS, Javascript, SQL, .NET Core, Test Driven Development, Graphic Design, Wordpress</string>
+    <string name="job">Software Developer Intern at Ontec Systems (Pty) Ltd</string>
+
 </resources>
